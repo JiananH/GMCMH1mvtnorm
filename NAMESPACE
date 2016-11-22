@@ -1,0 +1,31 @@
+useDynLib(GMCMH)
+export(iDist)
+export(spLM)
+export(mkSpCov)
+export(spRecover)
+export(spPredict)
+export(mkMvX)
+export(spMvLM)
+export(spDiag)
+export(spMvGLM)
+export(spGLM)
+export(bayesLMRef)
+export(adaptMetropGibbs)
+export(pointsInPoly)
+export(spDynLM)
+export(spDynLMmod)
+export(spDynLMmodgone)
+export(bayesGeostatExact)
+export(bayesLMConjugate)
+export(spMisalignLM)
+export(spMisalignGLM)
+import(Formula, abind, coda, magic, mvtnorm)
+importFrom("stats",
+	   pnorm, qnorm, rnorm, runif,
+	   pt, qt,
+	   rchisq, uniroot,
+	   cov2cor, optim, coef, glm, pcauchy, qcauchy, predict, quasi)
+importFrom("methods", hasArg)
+export(rmvnorm, dmvnorm, pmvnorm, pmvt, rmvt, qmvnorm, qmvt, dmvt,
+       GenzBretz, Miwa, TVPACK)
+
